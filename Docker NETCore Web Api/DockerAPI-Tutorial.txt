@@ -1,0 +1,13 @@
+- dotnet new webapi -n DockerAPI
+- code -r DockerAPI (open project to VSCode)
+- create new file "Dockerfile"
+- create new file ".dockerignore"
+
+- docker build <hub_id>/<image_name>:version
+- docker build muhkhoirudin/dockerapi . (will set as latest version)
+
+- docker images (see all images)
+- docker run -d -p 8089:80 --name dockerapi muhkhoirudin/dockerapi
+
+- docker ps (to see docker images are running)
+- docker push muhkhoirudin/dockerapi (push to docker hub)

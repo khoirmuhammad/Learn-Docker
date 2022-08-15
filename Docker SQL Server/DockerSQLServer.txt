@@ -1,0 +1,7 @@
+docker run --name sql_2017 -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=password123' -e 'MSSQL_PID=Express' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
+
+server name : localhost,1433
+username : sa or SA
+password : password123
+
+https://www.sqlservercentral.com/articles/docker-desktop-on-windows-10-for-sql-server-step-by-step
